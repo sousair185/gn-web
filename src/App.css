@@ -6,6 +6,50 @@
   text-align: center;
 }
 
+.whats {
+  width: 2em;
+}
+
+.btn-modal {
+  position: fixed;
+  right: 3vw;
+  bottom: 6vh;
+  margin: 10px;
+  background-color: #132068;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.alerta {
+  position: fixed;
+  bottom: 7vh;
+  right: 6vw;
+  background: rgb(4, 173, 200);
+  background: linear-gradient(
+    317deg,
+    rgba(4, 173, 200, 1) 0%,
+    rgba(9, 108, 119, 0.8302325581395349) 32%,
+    rgba(58, 255, 0, 1) 100%
+  );
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+  text-shadow: #131313 1px 1px 3px;
+}
+
+a.btn.btn-link {
+  color: white;
+}
+
+.btn-close {
+  background-color: rgb(33, 0, 122);
+  border-style: none;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+}
+
 .header-menu {
   display: inline-flex;
   flex-direction: row;
@@ -74,13 +118,15 @@ textarea {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  min-width: 90vw;
+  min-width: 80vw;
   margin: 0 auto;
   min-height: 40vh;
 }
 
 .form input {
   /* text-align: center; */
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 1em;
   width: 100%;
@@ -91,27 +137,6 @@ textarea {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   /* background-color: #f38181; */
-}
-.form label {
-  /* position: absolute; */
-  top: 20vh;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  border-bottom: 1px solid white;
-}
-.form label::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  border-bottom: 3px solid #fce38a;
-  transform: translateX(-100%);
-  transition: all 0.3s ease;
 }
 
 input[type="submit"] {
@@ -129,7 +154,6 @@ input[type="submit"]:hover {
 }
 
 .form input:focus {
-  text-align: left;
   outline: none;
 }
 .form input:focus + .label-name .content-name,
@@ -168,10 +192,15 @@ input[type="submit"]:hover {
   margin: 0.1rem;
 }
 
+li.data{
+  transition: all 0.3s ease;
+}
+
 .modal {
   border-radius: 20px;
   background-color: #2b5f8a;
   transition: all 0.3s ease;
+  /* margin: 0; */
 }
 
 .input {
