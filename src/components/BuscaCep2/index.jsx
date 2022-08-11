@@ -87,7 +87,7 @@ function BuscaCep2() {
               <span className="data-desc"> {data.desc}</span>
               <br />
               <p>
-                <a>Clique aqui </a>e escolha o melhor pacote para você
+                <a className="link">Clique aqui </a>e escolha o melhor pacote para você
               </p>
             </li>
           ))}
